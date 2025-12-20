@@ -20,4 +20,9 @@ model User {
   password  String
   CreatedAt DateTime @default(now())
   UpdatedAt DateTime @updatedAt
+  
+}
+
+model googleUser{
+  
 }

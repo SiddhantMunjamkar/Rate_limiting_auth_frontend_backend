@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "tsc -b",
-    "start": "node dist/index.js"
+    "start": " tsc -b  && node dist/index.js"
   },
   "keywords": [],
   "author": "",
