@@ -20,9 +20,14 @@ model User {
   password  String
   CreatedAt DateTime @default(now())
   UpdatedAt DateTime @updatedAt
-  
 }
 
-model googleUser{
-  
+model googleUser {
+  id        Int      @id @default(autoincrement())
+  googleId  String   @unique
+  name      String
+  email     String   @unique
+  avatar    String?
+  CreatedAt DateTime @default(now())
+  UpdatedAt DateTime @updatedAt
 }

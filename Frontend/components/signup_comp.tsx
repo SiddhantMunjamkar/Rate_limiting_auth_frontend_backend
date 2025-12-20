@@ -9,6 +9,7 @@ import Link from "next/link";
 import { PasswordInput } from "./password_input";
 import axios from "axios";
 import { useRouter } from "next/navigation";
+import { googleLogin } from "@/lib/auth";
 
 function SignupComp() {
   const [email, setEmail] = React.useState("");
@@ -79,7 +80,7 @@ function SignupComp() {
             <div className="flex-1 border-t border-gray-300"></div>
           </div>
           <div className="flex gap-4 justify-center">
-            <Button className="h-14 w-30 bg-gray-50 border hover:bg-gray-100">
+            <Button className="h-14 w-30 bg-gray-50 border hover:bg-gray-100" onClick={googleLogin}>
               <FcGoogle className="size-8" />
             </Button>
             <Button className="h-14 w-30 bg-gray-50 border hover:bg-gray-100">
