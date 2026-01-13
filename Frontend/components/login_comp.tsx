@@ -47,11 +47,11 @@ function LoginComp() {
     <div className="h-screen w-full relative">
       <div className="absolute top-0 left-0 flex px-10 py-10">
         <Box className="size-6 text-sky-500" />
-        <span className="text-xl pl-1 font-bold">InsideBox</span>
+        <span className="text-xl pl-1 font-bold">OurApp</span>
       </div>
       <div className="h-full flex flex-col justify-center items-center px-8">
         <div className="max-w-md w-full">
-          <h1 className="font-bold text-3xl mb-8"> Log In to InsideBox</h1>
+          <h1 className="font-bold text-3xl mb-8"> Log In to OurApp</h1>
           <div className="mb-4">
             <CustomInput
               label="E-mail"
